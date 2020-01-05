@@ -8,6 +8,13 @@
   <packaging>maven-archetype</packaging>
 
   <name>parent-archetype</name>
+  <description>A semi-simple Java 11 template with google jib for some extra fun.</description>
+
+  <organization>
+    <url>https://github.com/newur</url>
+    <name>newur</name>
+  </organization>
+  <inceptionYear>2020</inceptionYear>
 
   <licenses>
     <license>
@@ -15,6 +22,16 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
+
+  <developers>
+    <developer>
+      <name>Ruwen Reddig</name>
+      <email>ruwen.reddig@gmail.com</email>
+      <organization>newur</organization>
+      <organizationUrl>https://github.com/newur</organizationUrl>
+      <timezone>UTC+01:00</timezone>
+    </developer>
+  </developers>
 
   <distributionManagement>
     <snapshotRepository>
