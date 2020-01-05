@@ -4,7 +4,7 @@
 
   <groupId>io.github.ruwen</groupId>
   <artifactId>parent-archetype</artifactId>
-  <version>0.3</version>
+  <version>0.3-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <name>parent-archetype</name>
