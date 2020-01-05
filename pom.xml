@@ -9,6 +9,7 @@
 
   <name>parent-archetype</name>
   <description>A semi-simple Java 11 template with google jib for some extra fun.</description>
+  <url>https://github.com/newur</url>
 
   <organization>
     <url>https://github.com/newur</url>
