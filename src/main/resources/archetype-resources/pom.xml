@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>${groupId}</groupId>
@@ -11,17 +12,29 @@
 
   <properties>
     <revision>0.0.1-SNAPSHOT</revision>
-    <maven.compiler.release>11</maven.compiler.release>
+    <maven.compiler.release>${java-version}</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.jupiter.version>5.5.2</junit.jupiter.version>
     <commons.lang3.version>3.9</commons.lang3.version>
     <jib.maven.plugin.version>1.8.0</jib.maven.plugin.version>
     <assertj.core.version>3.14.0</assertj.core.version>
     <resolve.parent.version.maven.plugin.version>0.8</resolve.parent.version.maven.plugin.version>
+    <slf4.version>1.7.30</slf4.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>${slf4.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
